@@ -134,3 +134,9 @@ a {
     color: rgb(224, 223, 223);
     margin-left: 10px;
 }
+
+@media screen and (max-width: 2000px) {
+    .bt.pramok{
+        width: 50px;
+    }
+}
