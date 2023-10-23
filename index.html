@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="styles/index.css">
     <link href="https://fonts.cdnfonts.com/css/furore" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
 </head>
 
 <body>
@@ -57,72 +56,73 @@
                     Конкурси
                 </a>
             </div>
-        
+
 
             <nav role="navigation">
                 <div id="menuToggle">
-              
-                  <input type="checkbox" />
-              
-              
-                  <span></span>
-                  <span></span>
-                  <span></span>
-              
-                  <!--
-                  Too bad the menu has to be inside of the button
-                  but hey, it's pure CSS magic.
-                  -->
-                  <ul id="menu">
-                    <a href="#" class="btn__burger" id="submitAnonymouslyButton2">
-                        <svg width="60" height="45" viewBox="0 0 50 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                    <input type="checkbox" />
+
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <ul id="menu">
+                        <a href="#" class="btn__burger" id="submitAnonymouslyButton2">
+                            <svg width="60" height="45" viewBox="0 0 50 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M37.2149 0.525879H12.7148L10.2647 15.226H39.6649L37.2149 0.525879ZM0.464691 20.126C0.464691 20.126 5.36471 22.576 24.9648 22.576C44.5649 22.576 49.4649 20.126 49.4649 20.126L39.6649 15.226H10.2647L0.464691 20.126ZM20.0648 29.926H29.8648V32.376H20.0648V29.926Z"
+                                    fill="#171616"></path>
+                                <path
+                                    d="M15.1648 39.7261C19.2241 39.7261 22.5148 36.4353 22.5148 32.376C22.5148 28.3167 19.2241 25.026 15.1648 25.026C11.1055 25.026 7.81473 28.3167 7.81473 32.376C7.81473 36.4353 11.1055 39.7261 15.1648 39.7261Z"
+                                    fill="#171616"></path>
+                                <path
+                                    d="M34.7649 39.7261C38.8242 39.7261 42.1149 36.4353 42.1149 32.376C42.1149 28.3167 38.8242 25.026 34.7649 25.026C30.7055 25.026 27.4148 28.3167 27.4148 32.376C27.4148 36.4353 30.7055 39.7261 34.7649 39.7261Z"
+                                    fill="#171616"></path>
+                            </svg>
+                            <li>Здати <br> анонімно</li>
+                        </a>
+                        <a href="#">
+                            <li>Новини</li>
+                        </a>
+                        <a href="#">
+                            <li>Винагорода</li>
+                        </a>
+                        <a href="#">
+                            <li>Про нас</li>
+                        </a>
+                        <a href="#">
+                            <li>Відео</li>
+                        </a>
+                        <a href="#">
+                            <li>Контакти</li>
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+
+            <div id="submitAnonymously" class="overlay">
+                <div class="popup">
+
+                    <h1 class="bt1">
+                        <svg width="40" height="30" viewBox="0 0 50 40" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M37.2149 0.525879H12.7148L10.2647 15.226H39.6649L37.2149 0.525879ZM0.464691 20.126C0.464691 20.126 5.36471 22.576 24.9648 22.576C44.5649 22.576 49.4649 20.126 49.4649 20.126L39.6649 15.226H10.2647L0.464691 20.126ZM20.0648 29.926H29.8648V32.376H20.0648V29.926Z"
-                                fill="#171616"></path>
+                                fill="#f3bc30"></path>
                             <path
                                 d="M15.1648 39.7261C19.2241 39.7261 22.5148 36.4353 22.5148 32.376C22.5148 28.3167 19.2241 25.026 15.1648 25.026C11.1055 25.026 7.81473 28.3167 7.81473 32.376C7.81473 36.4353 11.1055 39.7261 15.1648 39.7261Z"
-                                fill="#171616"></path>
+                                fill="#f3bc30"></path>
                             <path
                                 d="M34.7649 39.7261C38.8242 39.7261 42.1149 36.4353 42.1149 32.376C42.1149 28.3167 38.8242 25.026 34.7649 25.026C30.7055 25.026 27.4148 28.3167 27.4148 32.376C27.4148 36.4353 30.7055 39.7261 34.7649 39.7261Z"
-                                fill="#171616"></path>
+                                fill="#f3bc30"></path>
                         </svg>
-                        <li>Здати <br> анонімно</li>
-                    </a>
-                    <a href="#">
-                      <li>Новини</li>
-                    </a>
-                    <a href="#">
-                      <li>Винагорода</li>
-                    </a>
-                    <a href="#">
-                      <li>Про нас</li>
-                    </a>
-                    <a href="#">
-                      <li>Відео</li>
-                    </a>
-                    <a href="#">
-                      <li>Контакти</li>
-                    </a>
-                  </ul>
-                </div>
-              </nav>
-              
-              <div id="submitAnonymously" class="overlay">
-                <div class="popup">
-                    <!-- Вміст вікна для анонімної подачі -->
-                <h1 class="bt1">
-                    <svg width="40" height="30" viewBox="0 0 50 40" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M37.2149 0.525879H12.7148L10.2647 15.226H39.6649L37.2149 0.525879ZM0.464691 20.126C0.464691 20.126 5.36471 22.576 24.9648 22.576C44.5649 22.576 49.4649 20.126 49.4649 20.126L39.6649 15.226H10.2647L0.464691 20.126ZM20.0648 29.926H29.8648V32.376H20.0648V29.926Z"
-                            fill="#f3bc30"></path>
-                        <path d="M15.1648 39.7261C19.2241 39.7261 22.5148 36.4353 22.5148 32.376C22.5148 28.3167 19.2241 25.026 15.1648 25.026C11.1055 25.026 7.81473 28.3167 7.81473 32.376C7.81473 36.4353 11.1055 39.7261 15.1648 39.7261Z"
-                            fill="#f3bc30"></path>
-                        <path d="M34.7649 39.7261C38.8242 39.7261 42.1149 36.4353 42.1149 32.376C42.1149 28.3167 38.8242 25.026 34.7649 25.026C30.7055 25.026 27.4148 28.3167 27.4148 32.376C27.4148 36.4353 30.7055 39.7261 34.7649 39.7261Z"
-                            fill="#f3bc30"></path>
-                    </svg>                                        
-                    Здати <br> анонімно
-                </h1>
+                        Здати <br> анонімно
+                    </h1>
                     <p>Якщо ви здаєте анонімно, ви не берете участь в акції</p>
-                    <p>ВАЖЛИВО: щоби стати учасником, необхідно написати заяву до поліції. Тільки в цьому випадку ви можете претендувати на грошову винагороду.</p>
+                    <p>ВАЖЛИВО: щоби стати учасником, необхідно написати заяву до поліції. Тільки в цьому випадку ви
+                        можете претендувати на грошову винагороду.</p>
                     <form>
                         <input type="text" id="region" placeholder="Область" class="input">
                         <input type="text" id="city" placeholder="Населений пункт" class="input">
@@ -130,14 +130,12 @@
                         <input type="email" id="email" placeholder="Email" class="input">
                         <button type="button" class="submit" onclick="submitForm()">ЗДАТИ БАРИГУ</button>
                     </form>
-                    <!-- Кнопка закриття вікна -->
+
                     <a class="close" href="#">&times;</a>
                 </div>
             </div>
 
 
-
-            
     </header>
     <div class="line-container">
         <div class="line">
@@ -287,7 +285,7 @@
             <div class="copyright">
                 <a href="#" class="copyright__text">Політика конфіденційності 2023</a>
             </div>
-        </footer>        
+        </footer>
         </div>
     </main>
 </body>

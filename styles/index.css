@@ -64,7 +64,6 @@ a {
     color: black;
     position: relative;
     padding: 1em 1.2em;
-    /* Замість 10px */
     clip-path: polygon(0% 10%, 100% 0%, 90% 100%, 10% 90%);
 }
 
@@ -277,7 +276,6 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* Вирівнює всі елементи по горизонталі по центру */
     align-items: center;
 }
 
@@ -327,38 +325,29 @@ footer {
 @media (max-width: 1400px) {
     .hero {
         padding: 3em 1em;
-        /* Зменшили відступи */
     }
 
     .container {
         flex-direction: column;
-        /* Змінили напрямок контейнера на вертикальний */
         margin: 0 1em;
-        /* Додали відступи з боків */
     }
 
     .container__box_text {
         margin-left: 0;
-        /* Знищили лівий відступ для текстового блоку */
         text-align: center;
-        /* Вирівняли текст по центру */
     }
 
     .title {
         font-size: 36px;
-        /* Зменшили розмір заголовку на менших екранах */
     }
 
     .gerb {
         width: 100px;
-        /* Зменшили розмір герба на менших екранах */
     }
 
     .mediabox {
         width: 100%;
-        /* Розтягуємо медіа-бокс на всю ширину контейнера */
         margin-left: 0;
-        /* Знищили відступ */
     }
 
     .btns {
@@ -367,21 +356,17 @@ footer {
 
     .flex_items {
         flex-direction: column;
-        /* Змінили напрямок для інформації та кнопок на вертикальний */
         align-items: center;
-        /* Вирівняли по центру */
         margin-top: 1em;
-        /* Зберегли відступ зверху */
+
     }
 
     .counter__border {
         padding: 0.4em 1em;
-        /* Зменшили відступи для блоків лічильника */
     }
 
     .counter__value {
         font-size: 1.5em;
-        /* Збільшили розмір значення лічильника */
     }
 
     footer {
@@ -400,13 +385,10 @@ footer {
 
 
 
-/* @media (max-width: 1000px) { */
-/* Кнопка для відкриття меню */
-/* Кнопка для відкриття меню */
-/* Зміни для мобільних екранів, зверху лого і бургер-меню */
+
 @media (max-width: 1000px) {
 
-    /* Сховати всі інші елементи меню, окрім логотипу і бургер-меню */
+  
     .nav__link {
         display: none;
     }
@@ -419,7 +401,7 @@ footer {
         display: none;
     }
 
-    /* Відобразити бургер-меню */
+
     #menuToggle {
         display: block;
         position: fixed;
@@ -431,7 +413,6 @@ footer {
         cursor: pointer;
     }
 
-    /* Налаштувати стилі для логотипу, вирівняти по центру */
     .logo__image {
         margin: 0 auto;
         display: block;
@@ -450,9 +431,7 @@ footer {
     display: block;
     position: fixed;
     top: 20px;
-    /* Верхня границя сторінки */
     left: 20px;
-    /* Лівий кут сторінки */
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
@@ -484,10 +463,12 @@ footer {
     clip-path: polygon(5% 0%, 100% 10%, 100% 90%, 0% 100%);
     padding: 1em 1.2em;
 }
-#menuToggle a:first-child:hover{
+
+#menuToggle a:first-child:hover {
     background: #6d561d;
     color: #ffffff;
 }
+
 #menuToggle input {
     display: block;
     width: 40px;
@@ -524,20 +505,18 @@ footer {
     transform-origin: 0% 100%;
 }
 
-/* Transform all the slices of hamburger into a crossmark */
+
 #menuToggle input:checked~span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
     background: #232323;
 }
 
-/* Hide the middle one */
 #menuToggle input:checked~span:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-/* Make this absolute positioned at the top left of the screen */
 #menu {
     position: fixed;
     top: -5em;
@@ -563,7 +542,7 @@ footer {
     background-image: url("../images/section.png");
 }
 
-/* Slide it in from the top */
+
 #menuToggle input:checked~ul {
     transform: none;
 }
@@ -572,7 +551,7 @@ footer {
 @media (min-width: 1000px) {
     #menu {
         display: none;
-        /* Приховуємо меню за верхньою границею на більших екранах */
+  
     }
 }
 
@@ -581,36 +560,33 @@ footer {
 @media (min-width: 1000px) {
     #menuToggle {
         display: none;
-        /* Приховуємо кнопку на екранах ширше 1000 пікселів */
+
     }
 }
 
-/* Зміни для мобільних екранів, зверху тільки логотип */
 
-/* Зміни для екранів шириною від 666px і більше */
 
-/* Зміни для екранів шириною до 666px */
-/* Зміни для екранів шириною до 666px */
+
 @media (max-width: 666px) {
 
-    /* Ряд з лічильниками */
+ 
     .counter {
         flex-direction: column;
-        /* Розміщуємо лічильники в одному ряду */
+
         justify-content: center;
-        /* Вирівнюємо їх по центру горизонталі */
+
     }
 
     .counter__border {
         margin-top: 1em;
-        /* Встановлюємо відступ між лічильниками */
+
     }
 
     .descr {
         margin-top: -4em;
     }
 
-    /* Окремий ряд для елемента "Бариг" */
+
     .barig {
         display: flex;
         flex-direction: row;
@@ -622,7 +598,7 @@ footer {
         margin-left: 20px;
     }
 
-    /* Політика конфіденційності */
+
     footer {
         flex-direction: column;
     }
@@ -697,7 +673,7 @@ footer {
     }
 }
 
-/* CSS */
+
 
 
 
@@ -720,10 +696,10 @@ footer {
     background-color: #1b1b1e;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(255, 255, 255,);
+    box-shadow: 0 0 10px rgba(255, 255, 255, );
     align-items: start;
     text-align: left;
-     -webkit-clip-path: polygon(30px 0, 100% 0, 100% 100%, 0 100%, 0 30px);
+    -webkit-clip-path: polygon(30px 0, 100% 0, 100% 100%, 0 100%, 0 30px);
     clip-path: polygon(30px 0, 100% 0, 100% 100%, 0 100%, 0 30px);
     color: #ffffff;
     overflow-y: auto;
@@ -734,12 +710,14 @@ footer {
     font-size: 23px;
     margin: 0 0 20px;
 }
-.bt1{
+
+.bt1 {
     display: grid;
     grid-template-columns: 2em 3em;
     align-items: center;
 
 }
+
 .popup form {
     display: flex;
     flex-direction: column;
@@ -750,7 +728,7 @@ footer {
     margin: 5px 0;
 }
 
-.input{
+.input {
     background-color: #16171b;
     -webkit-clip-path: polygon(30px 0, 100% 0, 100% 100%, 0 100%, 0 30px);
     clip-path: polygon(30px 0, 100% 0, 100% 100%, 0 100%, 0 30px);
@@ -760,7 +738,8 @@ footer {
     font-size: 0.9375em;
     font-family: 'Furore';
 }
-.submit{
+
+.submit {
     height: 4em;
     background-color: #2d0606;
     margin-top: 0.5em;
@@ -769,11 +748,13 @@ footer {
     border: none;
     cursor: pointer;
 }
-.submit:hover{
+
+.submit:hover {
     height: 4.1em;
     background-color: #063010;
     color: #26ff00;
 }
+
 .close {
     position: absolute;
     top: 5px;
