@@ -1,7 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/furore');
 
 body {
-    margin: 0;  
+    margin: 0;
     font-family: 'Furore';
     font-weight: 400;
     background-image: url("../images/section.png");
@@ -21,7 +21,7 @@ body {
 }
 
 .logo__image {
-    width: 13em; 
+    width: 13em;
     height: auto;
 }
 
@@ -29,9 +29,9 @@ a {
     text-decoration: none;
     white-space: nowrap;
     color: white;
-    font-size: 0.9375em; 
+    font-size: 0.9375em;
     font-family: 'Furore';
-    margin-left: 0.9375em; 
+    margin-left: 0.9375em;
 }
 
 .nav__link:nth-child(2) {
@@ -54,8 +54,8 @@ a {
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
-    font-size: 0.9em; 
-    grid-gap: 0.9375em; 
+    font-size: 0.9em;
+    grid-gap: 0.9375em;
     color: black;
 }
 
@@ -63,7 +63,8 @@ a {
     background: linear-gradient(94.71deg, #f3bc30 2.67%, #FFDE33 137.28%);
     color: black;
     position: relative;
-    padding: 1em 1.2em; /* Замість 10px */
+    padding: 1em 1.2em;
+    /* Замість 10px */
     clip-path: polygon(0% 10%, 100% 0%, 90% 100%, 10% 90%);
 }
 
@@ -85,6 +86,7 @@ a {
     display: inline-block;
     animation: line 350s linear infinite;
 }
+
 .line p {
     font-size: 1.5em;
 }
@@ -94,6 +96,7 @@ a {
     0% {
         transform: translateX(0%);
     }
+
     100% {
         transform: translateX(-100%);
     }
@@ -110,10 +113,10 @@ a {
 }
 
 
-  
 
-  
-.bt:after{
+
+
+.bt:after {
     position: absolute;
     content: "";
     top: 0;
@@ -122,23 +125,24 @@ a {
     height: 100%;
     background: #ffffff;
     transition: all .65s;
-    
-  }
-  
-.bt:hover{
+
+}
+
+.bt:hover {
     color: #ffffff;
     background: #090909;
-  }
-  
-.bt:hover::after{
+}
+
+.bt:hover::after {
     width: 35%;
 }
+
 main {
     padding: 5em 5em;
     padding-top: 2.5em;
     padding-bottom: 0em;
     overflow: hidden;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -152,9 +156,10 @@ main {
     overflow: hidden;
 }
 
-.container__box{
+.container__box {
     display: flex;
 }
+
 .container__box_text {
     display: flex;
     flex-direction: column;
@@ -165,6 +170,7 @@ main {
     grid-gap: 10px;
     text-align: start;
 }
+
 .subtitle {
     font-size: 15px;
     background-color: #1c1e22;
@@ -172,6 +178,7 @@ main {
     padding: 0.8em;
 
 }
+
 .title {
     font-size: 52px;
     margin-top: -0.3em;
@@ -180,12 +187,13 @@ main {
     line-height: 1.2;
     white-space: nowrap;
 }
-.gerb{
-    width: 150px;  
+
+.gerb {
+    width: 150px;
     height: 280px;
 }
 
-.mediabox{
+.mediabox {
     display: inline-block;
     position: relative;
     -webkit-clip-path: polygon(60px 0, 100% 0, 100% 100%, 0 100%, 0 60px);
@@ -196,9 +204,10 @@ main {
     overflow: hidden;
     max-width: 35em;
 }
+
 .mediabox__control {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .flex_items {
@@ -234,9 +243,11 @@ main {
 .counter__border p {
     margin: 0;
 }
-.counter__border:last-child{
+
+.counter__border:last-child {
     margin-left: 1em;
 }
+
 .counter__value {
     font-size: 2.5em;
     padding-left: 1em;
@@ -254,6 +265,7 @@ main {
     padding: 20px;
     white-space: nowrap;
 }
+
 .button__link_2 {
     background: #ffffff;
     margin-top: -10px;
@@ -261,23 +273,28 @@ main {
 
 
 
-.btns{
+.btns {
     display: flex;
     flex-direction: row;
-    justify-content: center; /* Вирівнює всі елементи по горизонталі по центру */
+    justify-content: center;
+    /* Вирівнює всі елементи по горизонталі по центру */
     align-items: center;
 }
-.button__link_2:hover{
+
+.button__link_2:hover {
     color: #ffffff;
     background: #f3bc30;
 }
-.button__link_1{
+
+.button__link_1 {
     color: #ffffff;
 }
-.button__link_1:hover{
+
+.button__link_1:hover {
     color: #000000;
     background: #ffffff;
 }
+
 .social-box ul {
     display: flex;
     list-style: none;
@@ -293,14 +310,461 @@ main {
     border-radius: 10px;
     width: 40px;
     height: 40px;
-    margin: 0 10px; 
+    margin: 0 10px;
 }
-footer{
+
+footer {
     padding-top: 1em;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
+
 .copyright__text {
     color: #4a4d52;
+}
+
+@media (max-width: 1400px) {
+    .hero {
+        padding: 3em 1em;
+        /* Зменшили відступи */
+    }
+
+    .container {
+        flex-direction: column;
+        /* Змінили напрямок контейнера на вертикальний */
+        margin: 0 1em;
+        /* Додали відступи з боків */
+    }
+
+    .container__box_text {
+        margin-left: 0;
+        /* Знищили лівий відступ для текстового блоку */
+        text-align: center;
+        /* Вирівняли текст по центру */
+    }
+
+    .title {
+        font-size: 36px;
+        /* Зменшили розмір заголовку на менших екранах */
+    }
+
+    .gerb {
+        width: 100px;
+        /* Зменшили розмір герба на менших екранах */
+    }
+
+    .mediabox {
+        width: 100%;
+        /* Розтягуємо медіа-бокс на всю ширину контейнера */
+        margin-left: 0;
+        /* Знищили відступ */
+    }
+
+    .btns {
+        margin-top: 3em;
+    }
+
+    .flex_items {
+        flex-direction: column;
+        /* Змінили напрямок для інформації та кнопок на вертикальний */
+        align-items: center;
+        /* Вирівняли по центру */
+        margin-top: 1em;
+        /* Зберегли відступ зверху */
+    }
+
+    .counter__border {
+        padding: 0.4em 1em;
+        /* Зменшили відступи для блоків лічильника */
+    }
+
+    .counter__value {
+        font-size: 1.5em;
+        /* Збільшили розмір значення лічильника */
+    }
+
+    footer {
+        margin-top: 1em;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* @media (max-width: 1000px) { */
+/* Кнопка для відкриття меню */
+/* Кнопка для відкриття меню */
+/* Зміни для мобільних екранів, зверху лого і бургер-меню */
+@media (max-width: 1000px) {
+
+    /* Сховати всі інші елементи меню, окрім логотипу і бургер-меню */
+    .nav__link {
+        display: none;
+    }
+
+    .button__link {
+        display: none;
+    }
+
+    .bt {
+        display: none;
+    }
+
+    /* Відобразити бургер-меню */
+    #menuToggle {
+        display: block;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+        cursor: pointer;
+    }
+
+    /* Налаштувати стилі для логотипу, вирівняти по центру */
+    .logo__image {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-origin: border-box;
+    }
+}
+
+#menuToggle {
+    display: block;
+    position: fixed;
+    top: 20px;
+    /* Верхня границя сторінки */
+    left: 20px;
+    /* Лівий кут сторінки */
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+#menuToggle a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+    color: rgb(0, 0, 0);
+}
+
+#menuToggle a:nth-child(2):hover {
+    color: #ffbf19;
+}
+
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+}
+
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+/* Transform all the slices of hamburger into a crossmark */
+#menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+}
+
+/* Hide the middle one */
+#menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/* Make this absolute positioned at the top left of the screen */
+#menu {
+    position: fixed;
+    top: -5em;
+    left: 0;
+    width: 100%;
+    padding: 50px;
+    padding-top: 125px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(0, -105%);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    overflow-y: auto;
+}
+
+#menu li {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+#menu {
+    background-image: url("../images/section.png");
+}
+
+/* Slide it in from the top */
+#menuToggle input:checked~ul {
+    transform: none;
+}
+
+
+@media (min-width: 1000px) {
+    #menu {
+        display: none;
+        /* Приховуємо меню за верхньою границею на більших екранах */
+    }
+}
+
+
+
+@media (min-width: 1000px) {
+    #menuToggle {
+        display: none;
+        /* Приховуємо кнопку на екранах ширше 1000 пікселів */
+    }
+}
+
+/* Зміни для мобільних екранів, зверху тільки логотип */
+
+/* Зміни для екранів шириною від 666px і більше */
+
+/* Зміни для екранів шириною до 666px */
+/* Зміни для екранів шириною до 666px */
+@media (max-width: 666px) {
+
+    /* Ряд з лічильниками */
+    .counter {
+        flex-direction: column;
+        /* Розміщуємо лічильники в одному ряду */
+        justify-content: center;
+        /* Вирівнюємо їх по центру горизонталі */
+    }
+
+    .counter__border {
+        margin-top: 1em;
+        /* Встановлюємо відступ між лічильниками */
+    }
+
+    .descr {
+        margin-top: -4em;
+    }
+
+    /* Окремий ряд для елемента "Бариг" */
+    .barig {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .counter__border:first-child {
+        margin-left: 20px;
+    }
+
+    /* Політика конфіденційності */
+    footer {
+        flex-direction: column;
+    }
+
+    .btns {
+        flex-direction: column;
+    }
+
+    .button__container2 {
+        margin-top: 4em;
+    }
+
+    .gerb {
+        width: 100px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    .gerb {
+        width: 75px;
+    }
+
+    .descr {
+        margin-top: -5em;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 400px) {
+    .gerb {
+        width: 70px;
+        margin-top: -1em;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .counter__border {
+        margin-top: 1em;
+        width: 300px;
+        font-size: 15px;
+    }
+
+    .subtitle {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .title {
+        font-size: 18px;
+    }
+
+    .descr {
+        margin-top: -6em;
+    }
+
+    .subtitle {
+        font-size: 8px;
+    }
+}
+
+/* CSS */
+
+
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1b1b1e;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255,);
+    align-items: start;
+    text-align: left;
+     -webkit-clip-path: polygon(30px 0, 100% 0, 100% 100%, 0 100%, 0 30px);
+    clip-path: polygon(30px 0, 100% 0, 100% 100%, 0 100%, 0 30px);
+    color: #ffffff;
+    overflow-y: auto;
+    height: 65%
+}
+
+.popup h1 {
+    font-size: 23px;
+    margin: 0 0 20px;
+}
+.bt1{
+    display: grid;
+    grid-template-columns: 2em 3em;
+    align-items: center;
+
+}
+.popup form {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup input {
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.input{
+    background-color: #16171b;
+    -webkit-clip-path: polygon(30px 0, 100% 0, 100% 100%, 0 100%, 0 30px);
+    clip-path: polygon(30px 0, 100% 0, 100% 100%, 0 100%, 0 30px);
+    height: 2.5em;
+    border: none;
+    color: #ffffff;
+    font-size: 0.9375em;
+    font-family: 'Furore';
+}
+.submit{
+    height: 4em;
+    background-color: #2d0606;
+    margin-top: 0.5em;
+    font-size: 0.9375em;
+    font-family: 'Furore';
+    border: none;
+    cursor: pointer;
+}
+.submit:hover{
+    height: 4.1em;
+    background-color: #063010;
+    color: #26ff00;
+}
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #f39b9b;
 }
