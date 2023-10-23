@@ -469,11 +469,25 @@ footer {
     color: rgb(0, 0, 0);
 }
 
-#menuToggle a:nth-child(2):hover {
+#menuToggle a:nth-child(3):hover {
     color: #ffbf19;
 }
 
-
+#menuToggle a:first-child {
+    display: inline-block;
+    background: #ffbf19;
+    display: grid;
+    grid-template-columns: 5em 1em;
+    align-items: center;
+    font-size: 0.9em;
+    color: #000000;
+    clip-path: polygon(5% 0%, 100% 10%, 100% 90%, 0% 100%);
+    padding: 1em 1.2em;
+}
+#menuToggle a:first-child:hover{
+    background: #6d561d;
+    color: #ffffff;
+}
 #menuToggle input {
     display: block;
     width: 40px;

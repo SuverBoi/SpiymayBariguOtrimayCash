@@ -1,16 +1,35 @@
-document.getElementById('submitAnonymouslyButton').addEventListener('click', function () {
-    document.getElementById('submitAnonymously').style.display = 'block';
-});
+// Отримуємо посилання на обидві кнопки за їх id
+const button1 = document.getElementById('submitAnonymouslyButton1');
+const button2 = document.getElementById('submitAnonymouslyButton2');
 
-document.querySelector('.close').addEventListener('click', function () {
-    document.getElementById('submitAnonymously').style.display = 'none';
-});
+// Отримуємо посилання на ваш віджет
+const submitAnonymously = document.getElementById('submitAnonymously');
 
+// Функція для обробки натискання на кнопки
+function toggleSubmitAnonymously() {
+    if (submitAnonymously.style.display === 'block') {
+        submitAnonymously.style.display = 'none';
+    } else {
+        submitAnonymously.style.display = 'block';
+    }
+}
+
+// Додаємо обробник подій для обох кнопок
+button1.addEventListener('click', toggleSubmitAnonymously);
+button2.addEventListener('click', toggleSubmitAnonymously);
+
+// Додаємо обробник події для закриття вікна при кліці поза ним
 window.addEventListener('click', function (e) {
-    if (e.target === document.getElementById('submitAnonymously')) {
-        document.getElementById('submitAnonymously').style.display = 'none';
+    if (e.target === submitAnonymously) {
+        submitAnonymously.style.display = 'none';
     }
 });
+
+// Додаємо обробник події для закриття вікна при кліці на "Закрити"
+document.querySelector('.close').addEventListener('click', function () {
+    submitAnonymously.style.display = 'none';
+});
+
 function submitForm() {
     // Отримайте значення полів вводу
     var region = document.getElementById("region").value;
